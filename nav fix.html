@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <title>Produk</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap-icons.css">
+    <link rel="stylesheet" href="vendor/rk.css">
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+   
+    <style>
+        html {scroll-behavior:smooth;}
+.ignielToTop {width:50px; height:50px; position:fixed; bottom:50px; right: 50px; z-index:99; cursor:pointer; border-radius:100px; transition:all .5s; background:#008c5f url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;}
+.ignielToTop:hover {background:#1d2129 url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;}
+.dropup .hide-toggle.dropdown-toggle::after {
+  display: none !important; 
+}
+
+
+body {
+ font-family: sans-serif;
+}
+
+/* Add WA floating button CSS */
+.floating {
+ position: fixed;
+ width: 60px;
+ height: 60px;
+ bottom: 40px;
+ right: 40px;
+ background-color: #25d366;
+ color: #fff;
+ border-radius: 50px;
+ text-align: center;
+ font-size: 30px;
+ box-shadow: 2px 2px 3px #999;
+ z-index: 100;
+}
+
+.fab-icon {
+ margin-top: 16px;
+}
+    </style>
+</head>
+<body>
+    <a href="https://wa.me/6285700419063" class="floating" target="_blank">
+        <i class="fab fa-whatsapp fab-icon"></i>
+        </a>
+    <a href="#" class="ignielToTop"></a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section class="riki-block produk text-center my-5 py-5">
+        <div class="container">
+          <h1>Pilih Produk Anda</h1>
+          <p class="fs-4">Kualitas terbaik biji pilihan,fresh diambil langsung dari petani</p>
+          <hr class="border border-garis border-2 opacity-100">
+    
+          <!-- Ini Untuk Select -->
+          <div class="form-floating">
+            <select class="form-select" id="select_kopi" aria-label="Floating label select example">
+              <option disabled selected>-</option>
+              <option value="1">ARABIKA</option>
+              <option value="2">ROBUSTA</option>
+            
+            </select>
+            <label for="select_kopi">Pilih Jenis Kopi</label>
+          </div>
+          <div id="baris_produk" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 text-center mt-5">
+            <div class="col">
+                <div class="card">
+                    <img src="images/produk/product_capuchino.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cappuccino</h5>
+                        <div class="row hargasize my-4">
+                            <div class="col">
+                                <i class="bi bi-basket-fill"></i>
+                                200 Gram
+                            </div>
+                           
+                            <div class="col">
+                                Rp. 150.000
+                            </div>
+                        </div>
+
+                  <a href="#" class="btn btn-success w-100">
+                    <i class="bi bi-cart-plus"></i> Beli</a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card">
+                <img src="images/produk/product_espresso.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Espresso</h5>
+                  <div class="row hargasize my-4">
+                    <div class="col">
+                        <i class="bi bi-basket-fill"></i>
+                     200 Gram
+                    </div>
+                    <div class="col">
+                      Rp. 100.000
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-success w-100">
+                    <i class="bi bi-cart-plus"></i> Beli</a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card">
+                <img src="images/produk/product_kopi_susu.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kopi Susu</h5>
+                  <div class="row hargasize my-4">
+                    <div class="col">
+                        <i class="bi bi-basket-fill"></i>
+                      200 Gram
+                    </div>
+                    <div class="col">
+                        
+                      Rp.50.000
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-success w-100">
+                    <i class="bi bi-cart-plus"></i> Beli</a>
+
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card">
+                <img src="images/produk/product_latte.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Latte</h5>
+                  <div class="row hargasize my-4">
+                    <div class="col">
+                        <i class="bi bi-basket-fill"></i>
+                      200 Gram
+                    </div>
+                    <div class="col">
+                      Rp. 100.000
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-success w-100">
+                    <i class="bi bi-cart-plus"></i> Beli</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    </nav>
+      
+</body>
+</html>
