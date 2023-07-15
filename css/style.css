@@ -443,9 +443,8 @@ footer .navigasi {
       display: none;
    }
 
-   .shop,
-   .col-produk {
-      margin-right: 20px;
+   .shop,{
+        margin-right: 20px;
       margin-left: auto;
    }
 
@@ -455,5 +454,13 @@ footer .navigasi {
       text-align: center;
       padding: 20px;
    }
-
+.col-produk,
+.col-team {
+   width: 50%;
+}
+.col-review {
+   width: 100%;
+   margin-bottom: 30px;
+   text-align: left;
+}
 }
