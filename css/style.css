@@ -443,7 +443,8 @@ footer .navigasi {
       display: none;
    }
 
-   .shop {
+   .shop,
+   .col-produk {
       margin-right: 20px;
       margin-left: auto;
    }
