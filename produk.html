@@ -14,10 +14,30 @@
     <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.6.3.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 <style>
         /* tulis kode CSS internal di bawah sini */
       
+        .slider .slick-slide {
+        border: solid 1px #000;
+    }
+    .slider .slick-slide img {
+        width: 100%;
+    }
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0 auto;
+            background: #dedede;
+        }
+        .container {
+            max-width: 900px;
+            padding: 15px;
+            background-color: #fff;
+            margin-left: auto;
+            margin-right: auto;
+        }
+  
 .bg-navigasi {
     background-color: rgb(3, 58, 109);
 }
@@ -107,6 +127,29 @@
           <div id="baris_produk" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 text-center mt-5">
            
           </div>
+          <div class="slider">
+            <div>
+                <a href="#">
+                    <img src="images/produk/product_capuchino.jpg" alt="Image 1">
+                </a>            
+            </div>
+            <div>
+                <a href="#">
+                    <img src="images/produk/product_espresso.jpg" alt="Image 2">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="images/produk/product_kopi_susu.jpg" alt="Image 3">
+                </a>            
+            </div>
+            <div>
+                <a href="#">
+                    <img src="images/produk/product_latte.jpg" alt="Image 4">
+                </a>
+            </div>
+           
+        </div>
         </div>
       </section>
 <!--footer-->
@@ -186,8 +229,25 @@ function ambilData(dipilih) {
   })
 }
 
+
+
         /* Batas Akhir penulisan kode Javascript */
     </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Slick JS -->    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Our Script -->
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 2500
+            });
+        });
+       
+    </script>
+    
 </body>
 
 </html>
